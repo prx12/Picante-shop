@@ -1,0 +1,311 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado principal */
+h1 {
+    background-color: #e62b1e; /* Rojo picante */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+    font-size: 2.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- */
+
+/* Estilos de la barra de navegación */
+.navegacion-primaria {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion-primaria ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para que los elementos se coloquen en línea */
+    justify-content: center; /* Centrar los elementos de la navegación */
+}
+
+.navegacion-primaria ul li {
+    margin: 0 15px;
+}
+
+.navegacion-primaria ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navegacion-primaria ul li a:hover {
+    background-color: #e62b1e; /* Rojo picante al pasar el mouse */
+    color: white;
+}
+
+/* --- */
+
+/* Estilos de la sección de información (WhatsApp, Ubicación) */
+.informacion {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacion p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25d366; /* Verde de WhatsApp */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+    background-color: #1da851;
+    transform: translateY(-2px);
+}
+
+.ubicacion {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e62b1e; /* Rojo picante */
+    margin-top: 25px;
+}
+
+/* --- */
+
+/* Estilos del formulario de inicio de sesión */
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Asegura que el formulario esté centrado verticalmente */
+    background: #f4f4f4; /* Fondo para el área del formulario */
+    padding: 20px;
+}
+
+.general form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.general h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: none; /* Eliminar el borde inferior del h1 general */
+    background-color: transparent; /* Eliminar el fondo del h1 general */
+    padding: 0; /* Eliminar padding del h1 general */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: calc(100% - 40px); /* Ajustar el ancho para el icono */
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #333;
+    padding: 0 20px;
+    padding-right: 45px; /* Espacio para el icono */
+}
+
+.input-box input::placeholder {
+    color: #aaa;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #777;
+    /* Necesitarás una librería de iconos como Font Awesome o Boxicons para que esto funcione */
+    /* Por ejemplo, puedes añadir en el <head> de tu HTML:
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    */
+}
+
+.centro {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin: -15px 0 15px;
+    color: #555;
+    align-items: center;
+}
+
+.centro label input {
+    accent-color: #e62b1e; /* Color del checkbox */
+    margin-right: 5px;
+}
+
+.centro a {
+    color: #e62b1e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.centro a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    width: 100%;
+    height: 45px;
+    background: #e62b1e; /* Rojo picante */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #cc251d; /* Rojo más oscuro al pasar el mouse */
+}
+
+.registrarse {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registrarse p a {
+    color: #e62b1e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.registrarse p a:hover {
+    text-decoration: underline;
+}
+
+/* --- */
+
+/* Estilos del footer (pie de página) */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+.footer-general {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-por-separado {
+    flex: 1; /* Permite que los bloques crezcan y se encojan */
+    min-width: 200px; /* Ancho mínimo para cada columna */
+    margin: 15px;
+}
+
+.footer-por-separado h3 {
+    color: #e62b1e; /* Rojo picante */
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #e62b1e;
+    padding-bottom: 5px;
+}
+
+.footer-por-separado p,
+.footer-por-separado a {
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-por-separado a:hover {
+    color: #e62b1e;
+}
+
+/* Estilos para los iconos del footer (si los usas) */
+/* Por ahora son clases vacías, pero si añades Font Awesome o similar, se verán. */
+.direccion, .telefono, .correo {
+    margin-right: 5px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .navegacion-primaria ul {
+        flex-direction: column; /* Apilar elementos de navegación en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .navegacion-primaria ul li {
+        margin: 5px 0;
+    }
+
+    .footer-general {
+        flex-direction: column; /* Apilar columnas del footer en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .footer-por-separado {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

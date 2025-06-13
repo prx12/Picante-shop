@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #e53935;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.picante-shop {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sabores {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+nav {
+    background-color: #c62828;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e53935;
+    transform: translateY(-2px);
+}
+
+.portada {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.imagen-de-portada {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.portada h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    width: 90%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.portada p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    width: 90%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.portada .ver-productos {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ver-productos {
+    display: inline-block;
+    background-color: #e53935;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #e53935;
+    cursor: pointer;
+}
+
+.ver-productos:hover {
+    background-color: #f70b0b;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.productos {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #c62828;
+    position: relative;
+}
+
+.subtitulo::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #e53935;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.productos-generales {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.producto-separado {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.producto-separado:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-del-producto {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto-separado:hover .imagen-del-producto {
+    transform: scale(1.05);
+}
+
+.informacion-del-producto {
+    padding: 20px;
+}
+
+.nombre-del-producto {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #c62828;
+}
+
+.precio-del-producto {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #e53935;
+}
+
+.descripcion-del-producto {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.about {
+    padding: 60px 20px;
+    background-color: #e8f5e9;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo-segundo {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #c62828;
+    position: relative;
+}
+
+.subtitulo-segundo::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #e53935;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.about > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.about > div > div:first-child {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.imagen-de-la-seccion {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagen-de-la-seccion:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    padding: 50px 0 0;
+}
+
+.footer-general {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-por-separado {
+    margin-bottom: 30px;
+}
+
+.footer-por-separado h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #e53935;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-por-separado h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #e53935;
+}
+
+.footer-por-separado p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-por-separado a {
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.footer-por-separado a:hover {
+    color: #e53935;
+    transform: translateX(5px);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a237e;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.direccion::before {
+    margin-right: 8px;
+}
+
+.telefono::before {
+    margin-right: 8px;
+}
+
+.correo::before {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .picante-shop {
+        font-size: 2rem;
+    }
+    
+    .portada h2 {
+        font-size: 2rem;
+        top: 40%;
+    }
+    
+    .portada p {
+        font-size: 1.1rem;
+        top: 55%;
+    }
+    
+    .portada .ver-productos {
+        top: 70%;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .subtitulo, .subtitulo-segundo {
+        font-size: 1.8rem;
+    }
+    
+    .about > div {
+        flex-direction: column;
+    }
+    
+    .about > div > div {
+        width: 100%;
+    }
+    
+    .imagen-de-portada {
+        height: 400px;
+        object-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .portada h2 {
+        font-size: 1.6rem;
+        top: 35%;
+    }
+    
+    .portada p {
+        font-size: 1rem;
+        top: 50%;
+    }
+    
+    .portada .ver-productos {
+        top: 65%;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .productos-generales {
+        grid-template-columns: 1fr;
+    }
+}
